@@ -1,10 +1,14 @@
 
 
  
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
 
 
-
-
+body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    }
 header{
     
     background-color: #D94E4E;
@@ -12,7 +16,7 @@ header{
 }
 
 .navbar{
-    
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     border-bottom: solid black 1px;
 }
 
@@ -31,6 +35,7 @@ h1, article, .timer, .navbar{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
    
 }
 .timertext{
@@ -42,7 +47,7 @@ h1, article, .timer, .navbar{
     margin-top: 7px;
     margin-left: 10%;
     margin-right: 10%;
-    
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     
 }
 
@@ -59,6 +64,8 @@ a:visited{
 .clock{
     display: flex;
     justify-content: center;
+    font-size: 90px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .start{
@@ -71,6 +78,7 @@ a:visited{
     border: none;
     border-radius: 5px;
     margin-bottom: 15px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;   
 }
 
 .button1{
@@ -78,9 +86,7 @@ a:visited{
     justify-content: center;
 }
 
-.clock{
-    font-size: 90px;
-}
+
 
 
 
@@ -90,6 +96,30 @@ a:visited{
     background-color: #C97370;
     padding:3px;
     box-sizing: border-box;
+    border-radius: 3px;
    
 
+}
+
+.text2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    height: 30px;
+    opacity: 70%;
+    font-size: 15px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+
+
+.text3{
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    height: 10px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
