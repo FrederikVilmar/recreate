@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
 
 
+*{
+    font-family: 'M PLUS Rounded 1c', sans-serif;  
+}
+
 body {
     margin:0;
     padding:0;
@@ -17,13 +21,30 @@ header{
 
 .navbar{
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    border-bottom: solid black 1px;
+    border-bottom: solid #C94B46 1px;
+    display: flex;
+    margin-left: 30%;
+    margin-right: 30%;
+    align-items: center;
+    gap: 2%;
+}
+.logo{
+    margin-right: auto;
+    color: white;
+    font-size: 17px;
+}
+
+.navbar a:hover{
+    
+        background-color: #C97370;
+        border-radius: 3px;   
+    
 }
 
 
 
 
-h1, article, .timer, .navbar{
+h1, article, .timer, div{
     margin-left: 35%;
     margin-right: 35%;
 }
@@ -42,7 +63,7 @@ h1, article, .timer, .navbar{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    justify-content: space-around;
+    justify-content: space-between;
     color: white;
     margin-top: 7px;
     margin-left: 10%;
@@ -78,8 +99,11 @@ a:visited{
     border: none;
     border-radius: 5px;
     margin-bottom: 15px;
-    font-family: 'M PLUS Rounded 1c', sans-serif;   
+    font-family: 'M PLUS Rounded 1c', sans-serif;  
+    cursor: pointer; 
 }
+
+
 
 .button1{
     display: flex;
@@ -92,13 +116,11 @@ a:visited{
 
 
 
-.timertext a:first-child{
-    background-color: #C97370;
-    padding:3px;
-    box-sizing: border-box;
-    border-radius: 3px;
-   
 
+
+.timertext a:hover{
+    background-color: #C97370; 
+    border-radius: 3px;
 }
 
 .text2{
@@ -123,3 +145,94 @@ a:visited{
     height: 10px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
+
+
+
+.uppertext{
+    color: white;
+    border-bottom: solid 0.5px white;
+    height: 35px;
+}
+
+.box1, .box2{
+    background-color: white;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    font-size: 14px;
+    
+}
+
+.box1{
+    border-left: 4px solid black;
+    margin-top: 17px;
+}
+
+.box2{
+    margin-top: 6px;
+}
+
+.box3{
+    background-color:#C94B46;
+    height: 40px;
+    border-radius: 4px;
+    border: dashed white 0.5px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 70%;
+    cursor: pointer;
+
+}
+
+.box3:hover{
+    border: solid white 1px;
+    opacity: 100%;
+}
+
+.box4{
+    background-color: #D97E7E;
+    height: 40px;
+    border-top: solid white 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.redtext{
+color: #D94E4E;
+cursor: pointer;
+}
+
+
+.redtext{
+    position: relative;
+  }
+  
+  .redtext::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #d94e4e;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .redtext:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
+
+
